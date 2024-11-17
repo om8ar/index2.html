@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>جدول الموظفين</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>جدول الحضور والمهام للموظفين</h2>
+        <a href="employees.html" class="link">إدارة قائمة الموظفين</a>
+        <form id="employeeForm">
+            <select id="employeeName" required>
+                <option value="">اختر الموظف</option>
+            </select>
+            <input type="text" id="task" placeholder="الأعمال المطلوبة" required>
+            <select id="attendance" required>
+                <option value="">اختر الحضور</option>
+                <option value="حاضر">حاضر</option>
+                <option value="غائب">غائب</option>
+            </select>
+            <button type="submit">إضافة</button>
+        </form>
+        <table id="employeeTable">
+            <thead>
+                <tr>
+                    <th>اسم الموظف</th>
+                    <th>رقم الأداء</th>
+                    <th>الحضور</th>
+                    <th>الأعمال المطلوبة</th>
+                    <th>التاريخ</th>
+                    <th>الإجراءات</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
